@@ -9,16 +9,18 @@
 
                     <div class="card-body">
                         <section class="content">
-                            <!-- Default box -->
-                            <div class="card">
-                                <div class="card-body">
-                                <a class="btn btn-primary" href="javascript:void(0)" id="tambahdata">
-                                    Tambah Data
-                                </a>
-                                <br/>
-                                <br/>
-                                <table class="table table-bordered data-table" width="100%">
-                                <thead class="thead-dark">
+                           <!-- Main content -->
+    <section class="content">
+
+        <!-- Default box -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                Tambah Data
+               </button>
+                <br/>
+                <table class="table table-bordered data-table" width="100%">
+                <thead class="thead-dark">
+
                                     <tr>
                                         <th width="10px">No</th>
                                         <th>Nama</th>
@@ -42,21 +44,23 @@
     </div>
 </div>
 <!-- {{-- modal mulai --}} -->
-<div class="modal fade" id="modal" aria-hidden="true">
-    <div class="modal-dialog modal-md">
-        <div class="modal-content">
-            <!-- Bagian header modal-->
-            <div class="modal-header">
-                <h4 class="modal-title">Tambah Data</h4>
-                <button type="button" class="close" data-dismiss="modal">
-                    <img src="{{ asset('assets/images/close.jpeg') }}" style="width:20px; height:20px;">
-                </button>
-            </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
             <!-- Akhir Bagian header modal-->
             <!-- Bagian Body Modal-->
             <div class="modal-body">
                 <!-- Form-->
                 <form id="form" name="form" class="form-horizontal" enctype="multipart/form-data">
+                        @csrf
                     <input type="hidden" name="category_id" id="category_id">
                     <div class="row">
                         <div class="col-sm-12">

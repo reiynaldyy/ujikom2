@@ -20,19 +20,9 @@
     <link href="/CoolAdmin/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
 
     <!-- Bootstrap CSS-->
-     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link href="/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/libs/css/style.css">
-    <link rel="stylesheet" href="/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
-    <link rel="stylesheet" href="/assets/vendor/charts/chartist-bundle/chartist.css">
-    <link rel="stylesheet" href="/assets/vendor/charts/morris-bundle/morris.css">
-    <link rel="stylesheet" href="/assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="/assets/vendor/charts/c3charts/c3.css">
-    <link rel="stylesheet" href="/assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
     <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.css') }}">
     @yield('css')
-    <link href="/CoolAdmin/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="{{asset('CoolAdmin/vendor/bootstrap-4.1/bootstrap.min.css')}}" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
     <link href="/CoolAdmin/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
@@ -82,27 +72,21 @@
                             </li>
                             <li class="nav-item ">
                             <a class="nav-link" href="{{url('/admin')}}" aria-expanded="false" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
-
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" aria-expanded="false" aria-controls="submenu-2"><i class="fas fa-user mr-2" style="color:aqua"></i></i>User</a>
-
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url('admin/customer')}}" aria-expanded="false" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Kustomer</a>
-
                             </li>
                             <li class="nav-item">
                             <a class="nav-link" href="{{url('admin/category')}}" aria-expanded="false" aria-controls="submenu-3"><i class="fas fa-fw fa-chart-pie" ></i>Kategori</a>
-
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="{{url('admin/product')}}"  aria-expanded="false"  aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms" style="color: lightcoral"></i>Produk</a>
-
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url('admin/stokmasuk')}}" aria-expanded="false" aria-controls="submenu-5"><i class="fas fa-fw fa-table"></i>Stok Masuk</a>
-
                             </li>
                             </ul>
                         </li>
@@ -137,29 +121,22 @@
                             </li>
                             <li class="nav-item ">
                             <a class="nav-link" href="{{url('/admin')}}" aria-expanded="false" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
-
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" aria-expanded="false" aria-controls="submenu-2"><i class="fas fa-user mr-2" style="color:aqua"></i></i>User</a>
-
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url('admin/customer')}}" aria-expanded="false" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Kustomer</a>
-
                             </li>
                             <li class="nav-item">
                             <a class="nav-link" href="{{url('admin/category')}}" aria-expanded="false" aria-controls="submenu-3"><i class="fas fa-fw fa-chart-pie" ></i>Kategori</a>
-
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="{{url('admin/product')}}"  aria-expanded="false"  aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms" style="color: lightcoral"></i>Produk</a>
-
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url('admin/stokmasuk')}}" aria-expanded="false" aria-controls="submenu-5"><i class="fas fa-fw fa-table"></i>Stok Masuk</a>
-
                             </li>
-
                             </ul>
                         </li>
                     </ul>

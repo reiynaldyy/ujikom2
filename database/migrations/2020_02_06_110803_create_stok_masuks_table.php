@@ -14,7 +14,7 @@ class CreateStokMasuksTable extends Migration
     public function up()
     {
         Schema::create('stok_masuks', function (Blueprint $table) {
-             $table->bigIncrements('id');
+            $table->bigIncrements('id');
             $table->unsignedBigInteger('id_produk');
             $table->foreign('id_produk')->references('id')->on('products')->onDelete('cascade');
             $table->integer('qty');

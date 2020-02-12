@@ -16,12 +16,12 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
+Route::get('/', 'HomeController@index');
+
 Route::get('/', function () {
     return view('layouts.backend');
 });
-
-Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
-Route::get('/', 'HomeController@index');
 
 Route::get('/cart', 'CartController@listCart');
 

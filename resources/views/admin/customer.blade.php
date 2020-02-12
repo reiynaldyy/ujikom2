@@ -18,17 +18,14 @@
         </div>
         </div><!-- /.container-fluid -->
     </section>
-
     <!-- Main content -->
     <section class="content">
 
         <!-- Default box -->
-        <div class="card">
-            <div class="card-body">
-                <a class="btn btn-primary" href="javascript:void(0)" id="tambahdata">
-                    Tambah Data
-                </a>
-                <br/>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                Tambah Data
+               </button>
                 <br/>
                 <table class="table table-bordered data-table" width="100%">
                 <thead class="thead-dark">
@@ -53,9 +50,62 @@
     </section>
     <!-- /.content -->
 </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Form-->
+                <form id="form" name="form" class="form-horizontal">
+                    <input type="hidden" name="customer_id" id="customer_id">
+                    @csrf
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label for="name" class="control-label">Nama Customer</label>
+                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Customer" maxlength="50" autocomplete="off" required>
+                            <span style="color: red;" id="error_nama"></span>
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="name" class="control-label">Email</label>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email" maxlength="50" autocomplete="off" required>
+                            <span style="color: red;" id="error_email"></span>
+                            <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="name" class="control-label">No Telepon</label>
+                            <input type="text" class="form-control" id="no_tlp" name="no_tlp" placeholder="No Telepon" maxlength="50" autocomplete="off" required>
+                            <span style="color: red;" id="error_no_tlp"></span>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <label for="name" class="control-label">Alamat</label>
+                            <textarea name="alamat" id="alamat" class="form-control" cols="30" rows="5" style="resize: none;"></textarea>
+                            <span style="color: red;" id="error_alamat"></span>
+                            <br>
+                        </div>
+                    </div>
+                </form>
+                <!-- Akhir Form-->
+               </div>
+         <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        <button type="button" type="submit" class="btn btn-primary" id="simpan">Simpan Data</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- {{-- modal mulai --}} -->
-<div class="modal fade" id="modal" aria-hidden="true">
+<div class="modal fade" id="tambahdata" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <!-- Bagian header modal-->
@@ -106,7 +156,6 @@
             <div class="modal-footer">
                 <button data-dismiss="modal" type="button" class="btn btn-danger pull-left"
                 id="reset">Batal</button>
-
                 <button align="right" type="submit" class="btn btn-primary" id="simpan">Simpan</button>
             </div>
             <!-- Akhir modal footer-->
@@ -116,15 +165,12 @@
 <!-- modal berakhir -->
 @endsection
 @section('js')
-<script>
-$('#modal').on('hidden.bs.modal',function(){
-    $('#error_nama').css('display','none');
-    $('#error_email').css('display','none');
-    $('#error_no_tlp').css('display','none');
-    $('#error_alamat').css('display','none');
-})
-</script>
 <script type="text/javascript">
+
+    $("#add_data").click(function() {
+        $("#tambahdata").modal("show");
+    });
+
     $(function () {
     $.ajaxSetup({
         headers: {

@@ -49,16 +49,13 @@
 					<a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
 					<a href="#" class="topbar-social-item fa fa-youtube-play"></a>
 				</div>
-
 				<span class="topbar-child1">
 					Free shipping for standard order over $100
 				</span>
-
 				<div class="topbar-child2">
 					<span class="topbar-email">
 						fashe@example.com
 					</span>
-
 					<div class="topbar-language rs1-select2">
 						<select class="selection-1" name="time">
 							<option>USD</option>
@@ -67,53 +64,39 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="wrap_header">
 				<!-- Logo -->
 				<a href="index.html" class="logo">
 					<img src="/fashe/images/icons/logo.png" alt="IMG-LOGO">
 				</a>
-
 				<!-- Menu -->
 				<div class="wrap_menu">
 					<nav class="menu">
 						<ul class="main_menu">
 							<li>
 								<a href="index.html">Home</a>
-								<ul class="sub_menu">
-									<li><a href="index.html">Homepage V1</a></li>
-									<li><a href="home-02.html">Homepage V2</a></li>
-									<li><a href="home-03.html">Homepage V3</a></li>
-								</ul>
 							</li>
-
 							<li>
 								<a href="product.html">Shop</a>
 							</li>
-
 							<li class="sale-noti">
 								<a href="product.html">Sale</a>
 							</li>
-
 							<li>
 								<a href="cart.html">Features</a>
 							</li>
-
 							<li>
 								<a href="blog.html">Blog</a>
 							</li>
-
 							<li>
 								<a href="about.html">About</a>
 							</li>
-
 							<li>
 								<a href="contact.html">Contact</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
-
 				<!-- Header Icon -->
 				<div class="header-icons">
 					<a href="#" class="header-wrapicon1 dis-block">
@@ -258,28 +241,23 @@
 										</span>
 									</div>
 								</li>
-
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
 										<img src="/fashe/images/item-cart-03.jpg" alt="IMG">
 									</div>
-
 									<div class="header-cart-item-txt">
 										<a href="#" class="header-cart-item-name">
 											Nixon Porter Leather Watch In Tan
 										</a>
-
 										<span class="header-cart-item-info">
 											1 x $17.00
 										</span>
 									</div>
 								</li>
 							</ul>
-
 							<div class="header-cart-total">
 								Total: $75.00
 							</div>
-
 							<div class="header-cart-buttons">
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
@@ -287,7 +265,6 @@
 										View Cart
 									</a>
 								</div>
-
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
 									<a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
@@ -298,7 +275,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
 					<span class="hamburger-box">
 						<span class="hamburger-inner"></span>
@@ -316,13 +292,11 @@
 							Free shipping for standard order over $100
 						</span>
 					</li>
-
 					<li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
 						<div class="topbar-child2-mobile">
 							<span class="topbar-email">
 								fashe@example.com
 							</span>
-
 							<div class="topbar-language rs1-select2">
 								<select class="selection-1" name="time">
 									<option>USD</option>
@@ -331,7 +305,6 @@
 							</div>
 						</div>
 					</li>
-
 					<li class="item-topbar-mobile p-l-10">
 						<div class="topbar-social-mobile">
 							<a href="#" class="topbar-social-item fa fa-facebook"></a>
@@ -341,21 +314,14 @@
 							<a href="#" class="topbar-social-item fa fa-youtube-play"></a>
 						</div>
 					</li>
-
 					<li class="item-menu-mobile">
 						<a href="index.html">Home</a>
-						<ul class="sub-menu">
-							<li><a href="index.html">Homepage V1</a></li>
-							<li><a href="home-02.html">Homepage V2</a></li>
-							<li><a href="home-03.html">Homepage V3</a></li>
 						</ul>
 						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
 					</li>
-
 					<li class="item-menu-mobile">
 						<a href="product.html">Shop</a>
 					</li>
-
 					<li class="item-menu-mobile">
 						<a href="product.html">Sale</a>
 					</li>
@@ -363,15 +329,12 @@
 					<li class="item-menu-mobile">
 						<a href="cart.html">Features</a>
 					</li>
-
 					<li class="item-menu-mobile">
 						<a href="blog.html">Blog</a>
 					</li>
-
 					<li class="item-menu-mobile">
 						<a href="about.html">About</a>
 					</li>
-
 					<li class="item-menu-mobile">
 						<a href="contact.html">Contact</a>
 					</li>
@@ -389,11 +352,9 @@
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
 							Women Collection 2018
 						</span>
-
 						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
 							New arrivals
 						</h2>
-
 						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
 							<!-- Button -->
 							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
@@ -402,17 +363,14 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="item-slick1 item2-slick1" style="background-image: url(images/master-slide-03.jpg);">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">
 							Women Collection 2018
 						</span>
-
 						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
 							New arrivals
 						</h2>
-
 						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
 							<!-- Button -->
 							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
@@ -421,17 +379,14 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="item-slick1 item3-slick1" style="background-image: url(images/master-slide-04.jpg);">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
 							Women Collection 2018
 						</span>
-
 						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
 							New arrivals
 						</h2>
-
 						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
 							<!-- Button -->
 							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
@@ -440,7 +395,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</section>
@@ -453,7 +407,6 @@
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
 						<img src="/fashe/images/banner-02.jpg" alt="IMG-BENNER">
-
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
@@ -461,11 +414,9 @@
 							</a>
 						</div>
 					</div>
-
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
 						<img src="/fashe/images/banner-05.jpg" alt="IMG-BENNER">
-
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
@@ -474,12 +425,10 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
 						<img src="/fashe/images/banner-03.jpg" alt="IMG-BENNER">
-
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
@@ -487,11 +436,9 @@
 							</a>
 						</div>
 					</div>
-
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
 						<img src="/fashe/images/banner-07.jpg" alt="IMG-BENNER">
-
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
@@ -500,12 +447,10 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
 						<img src="/fashe/images/banner-04.jpg" alt="IMG-BENNER">
-
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
@@ -513,20 +458,16 @@
 							</a>
 						</div>
 					</div>
-
 					<!-- block2 -->
 					<div class="block2 wrap-pic-w pos-relative m-b-30">
 						<img src="/fashe/images/icons/bg-01.jpg" alt="IMG">
-
 						<div class="block2-content sizefull ab-t-l flex-col-c-m">
 							<h4 class="m-text4 t-center w-size3 p-b-8">
 								Sign up & get 20% off
 							</h4>
-
 							<p class="t-center w-size4">
 								Be the frist to know about the latest fashion news and get exclu-sive offers
 							</p>
-
 							<div class="w-size2 p-t-25">
 								<!-- Button -->
 								<a href="#" class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
@@ -554,26 +495,27 @@
 				<div class="slick2">
 
 					<div class="item-slick2 p-l-15 p-r-15">
-						<!-- Block2 -->
+                        <!-- Block2 -->
+                        @php
+                            $produk = \App\Product::with('category')->latest()->paginate(3);
+                        @endphp
+                        @foreach ($produk as $data)
 						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-								<img src="/fashe/images/item-02.jpg" alt="IMG-PRODUCT">
-
-								<div class="block2-overlay trans-0-4">
-									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-									</a>
-
-									<div class="block2-btn-addcart w-size1 trans-0-4">
-										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
-										</button>
+								<img src="/assets/images/{{ $data->gambar }}" alt="" width="250" height="300">
+								<div class="product_content text-center">
+										<div class="product_title"><a href="product.html">{{ $data->nama }}</a></div>
+                                        <div class="product_price">{{ $data->harga }}</div>
+                                    <form action="{{url('/masukkeranjang')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="id_produk" value="{{$data->id}}">
+                                    <input type="hidden" name="qty" value="1">
+                                    <button type="submit" class="product_button ml-auto mr-auto trans_200">Add To Cart</button>
+                                    </form>
 									</div>
 								</div>
-							</div>
-
+                            </div>
+                            @endforeach
 							<div class="block2-txt p-t-20">
 								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
 									Herschel supply co 25l
@@ -586,7 +528,7 @@
 						</div>
 					</div>
 
-					<div class="item-slick2 p-l-15 p-r-15">
+					{{-- <div class="item-slick2 p-l-15 p-r-15">
 						<!-- Block2 -->
 						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative">
@@ -786,7 +728,7 @@
 								</span>
 							</div>
 						</div>
-					</div>
+                    </div>
 
 					<div class="item-slick2 p-l-15 p-r-15">
 						<!-- Block2 -->
@@ -823,7 +765,7 @@
 								</span>
 							</div>
 						</div>
-					</div>
+					</div> --}}
 				</div>
 			</div>
 
