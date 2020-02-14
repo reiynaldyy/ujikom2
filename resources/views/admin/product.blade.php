@@ -63,7 +63,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <label for="name" class="control-label">Nama Produk</label>
-                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Produk" autocomplete="off" required>
+                            <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Produk">
                         </div>
                          <div class="col-sm-12">
                             <label for="name" class="control-label">Nama Kategori</label>
