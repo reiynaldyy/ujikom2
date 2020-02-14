@@ -14,12 +14,13 @@
 
         <!-- Default box -->
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                <button type="button" class="btn btn-primary" id="tambahdata" href="javascript:void(0);">
                 Tambah Data
                </button>
                 <br/>
                 <table class="table table-bordered data-table" width="100%">
                 <thead class="thead-dark">
+                    <tr>
 
                                     <tr>
                                         <th width="10px">No</th>
@@ -45,7 +46,8 @@
 </div>
 <!-- {{-- modal mulai --}} -->
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -100,7 +102,7 @@
         ajax: "{{ url('admin/category') }}",
         columns: [
             {data: 'DT_RowIndex', name: 'DT_RowIndex'},
-            {data: 'name', name: 'name'},
+            {data: 'nama', name: 'nama'},
             {data: 'slug', name: 'slug'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]

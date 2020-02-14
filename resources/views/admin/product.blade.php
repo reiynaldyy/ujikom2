@@ -11,12 +11,13 @@
                         <section class="content">
                             <!-- Default box -->
                               <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+               <button type="button" class="btn btn-primary" id="tambahdata" href="javascript:void(0);">
                 Tambah Data
                </button>
                 <br/>
                 <table class="table table-bordered data-table" width="100%">
                 <thead class="thead-dark">
+                    <tr>
                                     <tr>
                                         <th width="10px">No</th>
                                         <th>Foto</th>
@@ -42,7 +43,7 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -119,7 +120,7 @@
             {data: 'gambar', name: 'gambar'},
             {data: 'nama', name: 'nama'},
             {data: 'slug', name: 'slug'},
-            {data: 'category.name', name: 'category_id'},
+            {data: 'category.nama', name: 'category_id'},
             {data: 'harga', name: 'harga'},
             {data: 'stok', name: 'stok'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
@@ -136,7 +137,7 @@
         var idProduk = $(this).data('id');
         $.get("{{ url('admin/product') }}"+"/"+idProduk+"/edit", function(data){
             // console.log(data);
-            $('#modal').modal({backdrop: 'static', keyboard: false});
+            // $('#modal').modal({backdrop: 'static', keyboard: false});
             $('#modal').modal('show');
             $('#product_id').val(data.produk.id);
             $('#nama').val(data.produk.name);

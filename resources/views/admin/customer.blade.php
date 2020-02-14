@@ -23,7 +23,7 @@
 
         <!-- Default box -->
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                <button type="button" class="btn btn-primary" id="tambahdata" href="javascript:void(0);">
                 Tambah Data
                </button>
                 <br/>
@@ -51,7 +51,7 @@
     <!-- /.content -->
 </div>
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -105,7 +105,7 @@
 </div>
 
 <!-- {{-- modal mulai --}} -->
-<div class="modal fade" id="tambahdata" aria-hidden="true">
+{{-- <div class="modal fade" id="tambahdata" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <!-- Bagian header modal-->
@@ -161,15 +161,15 @@
             <!-- Akhir modal footer-->
         </div>
     </div>
-</div>
+</div> --}}
 <!-- modal berakhir -->
 @endsection
 @section('js')
 <script type="text/javascript">
 
-    $("#add_data").click(function() {
-        $("#tambahdata").modal("show");
-    });
+// $("#tambahdata").click(function() {
+//     $("#modal").modal("show");
+// })
 
     $(function () {
     $.ajaxSetup({
@@ -215,7 +215,7 @@
         var idCustomer = $(this).data('id');
         $.get("{{ url('admin/customer') }}"+"/"+idCustomer+"/edit", function(data){
             $('.modal-title').html('Edit Data');
-            $('#modal').modal({backdrop: 'static', keyboard: false});
+            // $('#modal').modal({backdrop: 'static', keyboard: false});
             $('#modal').modal('show');
             $('#customer_id').val(data.id);
             $('#nama').val(data.nama);

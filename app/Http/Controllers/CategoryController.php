@@ -58,7 +58,7 @@ class CategoryController extends Controller
         Category::updateOrCreate(
             ['id' => $request->category_id],
             [
-                'name' => $request->name,
+                'nama' => $request->name,
                 'slug' => $slug
             ]
         );

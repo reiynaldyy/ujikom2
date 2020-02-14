@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use DataTables;
 use App\Product;
+
 use Illuminate\Support\Facades\File;
 use Auth;
 use DB;
@@ -158,8 +159,8 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-         $produk = Product::find($id);
-        $kategori = \DB::select('SELECT id,nama FROM kategoris');
+        $produk = Product::find($id);
+        $kategori = \DB::select('SELECT id,nama FROM categories');
         foreach ($kategori as $value) {
             $data[] = '<option value="' . $value->id . '" ' . ($value->id == $produk->category_id ? 'selected' : '') . '>' . $value->nama . '</option>';
         }
