@@ -74,22 +74,22 @@
 					<nav class="menu">
 						<ul class="main_menu">
 							<li>
-								<a href="index.html">Home</a>
+								<a href="/">Home</a>
 							</li>
 							<li>
-								<a href="product.html">Shop</a>
+								<a href="/product">Shop</a>
 							</li>
 							<li class="sale-noti">
-								<a href="product.html">Sale</a>
+								<a href="/product">Sale</a>
 							</li>
 							<li>
-								<a href="cart.html">Features</a>
+								<a href="/cart">Features</a>
 							</li>
 							<li>
-								<a href="blog.html">Blog</a>
+								<a href="/blog">Blog</a>
 							</li>
 							<li>
-								<a href="about.html">About</a>
+								<a href="/about">About</a>
 							</li>
 							<li>
 								<a href="contact.html">Contact</a>
@@ -315,28 +315,28 @@
 						</div>
 					</li>
 					<li class="item-menu-mobile">
-						<a href="index.html">Home</a>
+						<a href="/">Home</a>
 						</ul>
 						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
 					</li>
 					<li class="item-menu-mobile">
-						<a href="product.html">Shop</a>
+						<a href="/product">Shop</a>
 					</li>
 					<li class="item-menu-mobile">
-						<a href="product.html">Sale</a>
+						<a href="/product">Sale</a>
 					</li>
 
 					<li class="item-menu-mobile">
-						<a href="cart.html">Features</a>
+						<a href="/cart">Features</a>
 					</li>
 					<li class="item-menu-mobile">
-						<a href="blog.html">Blog</a>
+						<a href="/blog">Blog</a>
 					</li>
 					<li class="item-menu-mobile">
-						<a href="about.html">About</a>
+						<a href="/about">About</a>
 					</li>
 					<li class="item-menu-mobile">
-						<a href="contact.html">Contact</a>
+						<a href="/contact">Contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -347,50 +347,41 @@
 	<section class="slide1">
 		<div class="wrap-slick1">
 			<div class="slick1">
-				<div class="item-slick1 item1-slick1" style="background-image: url(images/master-slide-02.jpg);">
+				<div class="item-slick1 item1-slick1" style="background-image: url(assets/images/hoodie1.jpg);">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-							Women Collection 2018
+
 						</span>
 						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
-							New arrivals
+
 						</h2>
 						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
 							<!-- Button -->
-							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-								Shop Now
+
+
 							</a>
 						</div>
 					</div>
 				</div>
-				<div class="item-slick1 item2-slick1" style="background-image: url(images/master-slide-03.jpg);">
-					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                <div class="item-slick1 item3-slick1" style="background-image: url(assets/images/hoodie2.jpg);">					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">
-							Women Collection 2018
 						</span>
 						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-							New arrivals
 						</h2>
 						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
 							<!-- Button -->
-							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-								Shop Now
 							</a>
 						</div>
 					</div>
 				</div>
-				<div class="item-slick1 item3-slick1" style="background-image: url(images/master-slide-04.jpg);">
+				<div class="item-slick1 item3-slick1" style="background-image: url(assets/images/hoodie4.jpg);">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
 						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
-							Women Collection 2018
 						</span>
-						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
-							New arrivals
+						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight"></h2>
 						</h2>
 						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
 							<!-- Button -->
-							<a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-								Shop Now
 							</a>
 						</div>
 					</div>
@@ -399,7 +390,7 @@
 		</div>
 	</section>
 
-	<!-- Banner -->
+	{{-- <!-- Banner -->
 	<section class="banner bgwhite p-t-40 p-b-40">
 		<div class="container">
 			<div class="row">
@@ -479,7 +470,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> --}}
 
 	<!-- New Product -->
 	<section class="newproduct bgwhite p-t-45 p-b-105">

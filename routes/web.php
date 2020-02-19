@@ -21,6 +21,7 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/', function () {
     return view('layouts.backend');
+
 });
 
 Route::get('/cart', 'CartController@listCart');

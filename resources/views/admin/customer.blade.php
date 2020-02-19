@@ -236,6 +236,7 @@
             });
         });
     });
+
     $('body').on('click','.hapus', function(){
         var idCustomer = $(this).data('id');
         $.ajax({
