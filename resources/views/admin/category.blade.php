@@ -11,7 +11,6 @@
                         <section class="content">
                            <!-- Main content -->
     <section class="content">
-
         <!-- Default box -->
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" id="tambahdata" href="javascript:void(0);">
@@ -21,16 +20,14 @@
                 <table class="table table-bordered data-table" width="100%">
                 <thead class="thead-dark">
                     <tr>
-
-                                    <tr>
-                                        <th width="10px">No</th>
-                                        <th>Nama</th>
-                                        <th>Slug</th>
-                                        <th width="150px">Opsi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
+                        <tr>
+                                <th width="10px">No</th>
+                                <th>Nama</th>
+                                <th>Slug</th>
+                                <th width="150px">Opsi</th>
+                        </tr>
+                    </thead>
+                                  <tbody>
                                 </tbody>
                                 </div>
                             </div>
