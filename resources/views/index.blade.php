@@ -393,31 +393,26 @@
                         @php
                             $produk = \App\Product::with('category')->latest()->paginate(3);
                         @endphp
-                        @foreach ($produk as $data)
-						<div class="block2">
-							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-								<img src="/assets/images/{{ $data->gambar }}" alt="" width="250" height="300">
-								<div class="product_content text-center">
+                       @foreach ($produk as $data)
+                                <div class="product grid-item hot">
+								<div class="product_inner">
+									<div class="product_image">
+										<img src="/assets/images/{{ $data->gambar }}" alt="" width="250" height="300">
+									</div>
+									<div class="product_content text-center">
 										<div class="product_title"><a href="product.html">{{ $data->nama }}</a></div>
                                         <div class="product_price">{{ $data->harga }}</div>
                                     <form action="{{url('/masukkeranjang')}}" method="post">
-                                    @csrf
+                                        @csrf
                                     <input type="hidden" name="id_produk" value="{{$data->id}}">
                                     <input type="hidden" name="qty" value="1">
                                     <button type="submit" class="product_button ml-auto mr-auto trans_200">Add To Cart</button>
                                     </form>
+
 									</div>
 								</div>
-                            </div>
+							</div>
                             @endforeach
-							<div class="block2-txt p-t-20">
-								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-									Herschel supply co 25l
-								</a>
-
-								<span class="block2-price m-text6 p-r-5">
-									$75.00
-								</span>
 							</div>
 						</div>
 					</div>

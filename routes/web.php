@@ -22,6 +22,12 @@ Route::get('/', 'HomeController@index');
 Route::get('/', function () {
     return view('layouts.backend');
 
+Route::get('/category', 'FrontendController@index');
+
+
+Route::get('/category/{category}', 'FrontendController@category');
+
+
 });
 
 Route::get('/cart', 'CartController@listCart');

@@ -140,13 +140,13 @@
             // $('#modal').modal({backdrop: 'static', keyboard: false});
             $('#modal').modal('show');
             $('#product_id').val(data.produk.id);
-            $('#nama').val(data.produk.name);
-            $('#category_id').html('');
-            $('#category_id').html(data.category);
-            $('#harga').val(data.produk.harga);
-            $('#stok').val(data.produk.stok);
+            $('#nama').val(data.produk.nama);
+            $('#category_id').html(data.category.id);
+            $('#category_id').html(data.category.nama);
+            $('#harga').val(data.product.harga);
+            $('#stok').val(data.product.stok);
             // $('#foto').html(data.produk.foto);
-            $('#description').val(data.produk.deskripsi);
+            $('#description').val(data.product.deskripsi);
         });
     });
     $('body').on('click','.hapus', function(){
@@ -199,7 +199,7 @@
                 $('#category_id').append(
                     `
                     <option value="${value.id}">
-                        ${value.name}
+                        ${value.nama}
                     </option>
                     `
                 )

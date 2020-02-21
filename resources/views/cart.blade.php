@@ -105,7 +105,31 @@
 						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
 						<span class="header-icons-noti">0</span>
 
-						<!-- Header cart noti -->
+                        <!-- Header cart noti -->
+                        <div class="cart_items">
+								<ul class="cart_items_list">
+                                <form action="{{url('/updatekeranjang')}}" method="post">
+                                    @csrf
+                                    <!-- Cart Item -->
+                                    @foreach ($carts as $data)
+                                    <input type="hidden" name="id_produk" value="{{$data['id_produk']}}">
+                                    <input type="hidden" name="qty" value="{{$data['qty']}}">
+                                    <li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+										<div class="product d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+                                        <div><div class="product_image"><img src="/assets/images/{{$data['foto_produk']}}" alt=""></div></div>
+                                        <div class="product_name"><a href="product.html">{{ $data['nama_produk'] }}</a></div>
+										</div>
+
+										<div class="product_price text-lg-center product_text"><span>Price: </span>Rp{{number_format($data['harga_produk'])}}</div>
+										<div class="product_quantity_container">
+											<div class="product_quantity ml-lg-auto mr-lg-auto text-center">
+                                            <span class="product_text product_num">{{$data['qty']}}</span>
+												<div class="qty_sub qty_button trans_200 text-center"><span>-</span></div>
+												<div class="qty_add qty_button trans_200 text-center"><span>+</span></div>
+											</div>
+                                        </div>
+									</li>
+                                    @endforeach
 						<div class="header-cart header-dropdown">
 							<ul class="header-cart-wrapitem">
 								<li class="header-cart-item">

@@ -13,14 +13,13 @@
     <section class="content">
         <!-- Default box -->
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" id="tambahdata" href="javascript:void(0);">
+                    <button type="button" class="btn btn-primary" id="tambahdata" href="javascript:void(0);">
                 Tambah Data
                </button>
                 <br/>
                 <table class="table table-bordered data-table" width="100%">
                 <thead class="thead-dark">
                     <tr>
-                        <tr>
                                 <th width="10px">No</th>
                                 <th>Nama</th>
                                 <th>Slug</th>
@@ -42,7 +41,6 @@
     </div>
 </div>
 <!-- {{-- modal mulai --}} -->
-<!-- Modal -->
 
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -54,7 +52,6 @@
         </button>
       </div>
       <div class="modal-body">
-            <!-- Akhir Bagian header modal-->
             <!-- Bagian Body Modal-->
             <div class="modal-body">
                 <!-- Form-->
