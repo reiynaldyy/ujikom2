@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use DataTables;
 use App\Product;
-
 use Illuminate\Support\Facades\File;
 use Auth;
 use DB;
@@ -110,7 +109,7 @@ class ProductController extends Controller
                     ]
                 );
             } else {
-                $old_photo = \DB::select('SELECT foto FROM produks WHERE id = ' . $request->produk_id . '');
+                $old_photo = \DB::select('SELECT gambar FROM products WHERE id = ' . $request->produk_id . '');
                 $data = '';
                 foreach ($old_photo as $value) {
                     $data .= $value->gambar;
@@ -190,7 +189,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-         $produk = Product::find($id);
+        $produk = Product::find($id);
         $image_path = "assets/images/" . $produk->gambar;
         if (File::exists($image_path)) {
             File::delete($image_path);

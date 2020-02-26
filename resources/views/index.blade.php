@@ -76,15 +76,9 @@
 								<a href="/">Home</a>
 							</li>
 							<li>
-								<a href="/product">Shop</a>
+								<a href="/product">Product</a>
 							<li>
-								<a href="/cart">Features</a>
-							</li>
-							<li>
-								<a href="/blog">Blog</a>
-							</li>
-							<li>
-								<a href="/contact">Contact</a>
+								<a href="/cart">Cart</a>
 							</li>
 						</ul>
 					</nav>
@@ -312,16 +306,10 @@
 						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
 					</li>
 					<li class="item-menu-mobile">
-						<a href="/product">Shop</a>
+						<a href="/product">Product</a>
 					</li>
 					<li class="item-menu-mobile">
-						<a href="/cart">Features</a>
-					</li>
-					<li class="item-menu-mobile">
-						<a href="/blog">Blog</a>
-					</li>
-					<li class="item-menu-mobile">
-						<a href="/contact">Contact</a>
+						<a href="/cart">Cart</a>
 					</li>
 				</ul>
 			</nav>
@@ -400,7 +388,7 @@
 										<img src="/assets/images/{{ $data->gambar }}" alt="" width="250" height="300">
 									</div>
 									<div class="product_content text-center">
-										<div class="product_title"><a href="product.html">{{ $data->nama }}</a></div>
+										<div class="product_title"><a href="/product">{{ $data->nama }}</a></div>
                                         <div class="product_price">{{ $data->harga }}</div>
                                     <form action="{{url('/masukkeranjang')}}" method="post">
                                         @csrf

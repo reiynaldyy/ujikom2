@@ -106,10 +106,10 @@
 <script type="text/javascript">
     $(function () {
     $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
-    });
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
       //INDEX TABEL
     var table = $('.data-table').DataTable({
         processing: true,

@@ -15,17 +15,19 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/cart', function () {
+    return view('cart');
+});
+
+Route::get('/product', 'FrontendController@index');
+
+Route::get('/kategori/{product}', 'FrontendController@category');
 
 Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
 Route::get('/', 'HomeController@index');
 
 Route::get('/', function () {
     return view('layouts.backend');
-
-Route::get('/category', 'FrontendController@index');
-
-
-Route::get('/category/{category}', 'FrontendController@category');
 
 
 });

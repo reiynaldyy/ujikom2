@@ -7,28 +7,28 @@
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/fashe/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/fashe/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="/fashe/fonts/themify/themify-icons.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="/fashe/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
+	<link rel="stylesheet" type="text/css" href="/fashe/fonts/elegant-font/html-css/style.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="/fashe/vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="/fashe/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="/fashe/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/fashe/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="/fashe/vendor/slick/slick.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="/fashe/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/fashe/css/main.css">
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -66,8 +66,8 @@
 
 			<div class="wrap_header">
 				<!-- Logo -->
-				<a href="/index" class="logo">
-					<img src="images/icons/logo.png" alt="IMG-LOGO">
+				<a href="index.html" class="logo">
+					<img src="/fashe/images/icons/logo.png" alt="IMG-LOGO">
 				</a>
 
 				<!-- Menu -->
@@ -75,20 +75,14 @@
 					<nav class="menu">
 						<ul class="main_menu">
 							<li>
-								<a href="/index">Home</a>
+								<a href="/">Home</a>
+							<li>
+								<a href="product">Product</a>
 							</li>
 							<li>
-								<a href="/product">Shop</a>
+								<a href="cart">Cart</a>
 							</li>
-							<li>
-								<a href="/cart">Features</a>
-							</li>
-							<li>
-								<a href="/blog">Blog</a>
-							</li>
-							<li>
-								<a href="/contact">Contact</a>
-							</li>
+
 						</ul>
 					</nav>
 				</div>
@@ -96,45 +90,21 @@
 				<!-- Header Icon -->
 				<div class="header-icons">
 					<a href="#" class="header-wrapicon1 dis-block">
-						<img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
+						<img src="/fashe/images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
 					</a>
 
 					<span class="linedivide1"></span>
 
 					<div class="header-wrapicon2">
-						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<img src="/fashe/images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
 						<span class="header-icons-noti">0</span>
 
-                        <!-- Header cart noti -->
-                        <div class="cart_items">
-								<ul class="cart_items_list">
-                                <form action="{{url('/updatekeranjang')}}" method="post">
-                                    @csrf
-                                    <!-- Cart Item -->
-                                    @foreach ($carts as $data)
-                                    <input type="hidden" name="id_produk" value="{{$data['id_produk']}}">
-                                    <input type="hidden" name="qty" value="{{$data['qty']}}">
-                                    <li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
-										<div class="product d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
-                                        <div><div class="product_image"><img src="/assets/images/{{$data['foto_produk']}}" alt=""></div></div>
-                                        <div class="product_name"><a href="product.html">{{ $data['nama_produk'] }}</a></div>
-										</div>
-
-										<div class="product_price text-lg-center product_text"><span>Price: </span>Rp{{number_format($data['harga_produk'])}}</div>
-										<div class="product_quantity_container">
-											<div class="product_quantity ml-lg-auto mr-lg-auto text-center">
-                                            <span class="product_text product_num">{{$data['qty']}}</span>
-												<div class="qty_sub qty_button trans_200 text-center"><span>-</span></div>
-												<div class="qty_add qty_button trans_200 text-center"><span>+</span></div>
-											</div>
-                                        </div>
-									</li>
-                                    @endforeach
+						<!-- Header cart noti -->
 						<div class="header-cart header-dropdown">
 							<ul class="header-cart-wrapitem">
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="images/item-cart-01.jpg" alt="IMG">
+										<img src="/fashe/images/item-cart-01.jpg" alt="IMG">
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -150,7 +120,7 @@
 
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="images/item-cart-02.jpg" alt="IMG">
+										<img src="/fashe/images/item-cart-02.jpg" alt="IMG">
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -166,7 +136,7 @@
 
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="images/item-cart-03.jpg" alt="IMG">
+										<img src="/fashe/images/item-cart-03.jpg" alt="IMG">
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -210,7 +180,7 @@
 		<div class="wrap_header_mobile">
 			<!-- Logo moblie -->
 			<a href="index.html" class="logo-mobile">
-				<img src="images/icons/logo.png" alt="IMG-LOGO">
+				<img src="/fashe/images/icons/logo.png" alt="IMG-LOGO">
 			</a>
 
 			<!-- Button show menu -->
@@ -218,13 +188,13 @@
 				<!-- Header Icon mobile -->
 				<div class="header-icons-mobile">
 					<a href="#" class="header-wrapicon1 dis-block">
-						<img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
+						<img src="/fashe/images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
 					</a>
 
 					<span class="linedivide2"></span>
 
 					<div class="header-wrapicon2">
-						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<img src="/fashe/images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
 						<span class="header-icons-noti">0</span>
 
 						<!-- Header cart noti -->
@@ -232,7 +202,7 @@
 							<ul class="header-cart-wrapitem">
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="images/item-cart-01.jpg" alt="IMG">
+										<img src="/fashe/images/item-cart-01.jpg" alt="IMG">
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -248,7 +218,7 @@
 
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="images/item-cart-02.jpg" alt="IMG">
+										<img src="/fashe/images/item-cart-02.jpg" alt="IMG">
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -264,7 +234,7 @@
 
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<img src="images/item-cart-03.jpg" alt="IMG">
+										<img src="/fashe/images/item-cart-03.jpg" alt="IMG">
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -346,29 +316,16 @@
 					</li>
 
 					<li class="item-menu-mobile">
-						<a href="/index">Home</a>
-						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+						<a href="/">Home</a>
+
+					<li class="item-menu-mobile">
+						<a href="/product">Product</a>
 					</li>
 
 					<li class="item-menu-mobile">
-						<a href="/product">Shop</a>
+						<a href="/cart">Cart</a>
 					</li>
 
-					<li class="item-menu-mobile">
-						<a href="/cart">Features</a>
-					</li>
-
-					<li class="item-menu-mobile">
-						<a href="/blog">Blog</a>
-					</li>
-
-					<li class="item-menu-mobile">
-						<a href="/about">About</a>
-					</li>
-
-					<li class="item-menu-mobile">
-						<a href="/contact">Contact</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -399,7 +356,7 @@
 						<tr class="table-row">
 							<td class="column-1">
 								<div class="cart-img-product b-rad-4 o-f-hidden">
-									<img src="images/item-10.jpg" alt="IMG-PRODUCT">
+									<img src="/fashe/images/item-10.jpg" alt="IMG-PRODUCT">
 								</div>
 							</td>
 							<td class="column-2">Men Tshirt</td>
@@ -423,7 +380,7 @@
 						<tr class="table-row">
 							<td class="column-1">
 								<div class="cart-img-product b-rad-4 o-f-hidden">
-									<img src="images/item-05.jpg" alt="IMG-PRODUCT">
+									<img src="/fashe/images/item-05.jpg" alt="IMG-PRODUCT">
 								</div>
 							</td>
 							<td class="column-2">Mug Adventure</td>
@@ -734,14 +691,14 @@
 
 
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/fashe/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+	<script type="text/javascript" src="/fashe/vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
-	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/fashe/vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="/fashe/vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+	<script type="text/javascript" src="/fashe/vendor/select2/select2.min.js"></script>
 	<script type="text/javascript">
 		$(".selection-1").select2({
 			minimumResultsForSearch: 20,
@@ -754,7 +711,7 @@
 		});
 	</script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+	<script src="/fashe/js/main.js"></script>
 
 </body>
 </html>

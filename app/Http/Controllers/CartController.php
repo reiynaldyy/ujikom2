@@ -8,7 +8,7 @@ use cookie;
 
 class CartController extends Controller
 {
-    private function getCarts()
+     private function getCarts()
     {
         $carts = json_decode(request()->cookie('dw-carts'), true);
         $carts = $carts != '' ? $carts : [];
@@ -68,7 +68,7 @@ class CartController extends Controller
         //AMBIL DATA DARI COOKIE
         $carts = $this->getCarts();
 
-        if (is_null($request->id_produk)) {
+        if ($request->id_produk) {
             return response()->json('Error : Your Product Not Found, Please Refresh Again or Try Again to AddToCart Your Product', 500);
         }
         //KEMUDIAN LOOPING DATA PRODUCT_ID, KARENA NAMENYA ARRAY PADA VIEW SEBELUMNYA

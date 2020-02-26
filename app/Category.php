@@ -13,4 +13,8 @@ class Category extends Model
     {
         return $this->hasMany('App\Product', 'category_id');
     }
+    public function getRoutKeyName()
+    {
+        return 'slug';
+    }
 }
